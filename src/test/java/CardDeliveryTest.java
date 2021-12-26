@@ -54,7 +54,7 @@ public class CardDeliveryTest {
         $("[data-test-id='name'] input").setValue("Аркадий Паровозов");
         $("[data-test-id='phone'] input").setValue("+79112650042");
         $("[class='button button_view_extra button_size_m button_theme_alfa-on-white']").click();
-        $("[data-test-id='agreement'].checkbox_text").shouldHave(Condition.text("Я соглашаюсь с условиями обработки и использования моих персональных данных"));
+        $("[data-test-id='agreement'] .checkbox__text").shouldHave(Condition.text("Я соглашаюсь с условиями обработки и использования моих персональных данных"));
 
     }
 
