@@ -37,6 +37,7 @@ public class CardDeliveryTest {
     @Test
     public void shouldCheckingTheFormNoPhone() {
         open("http://localhost:9999/");
+        $("[data-test-id='city'] input").setValue("Москва");
         $("[data-test-id='date'] input").doubleClick().sendKeys(Keys.BACK_SPACE);
         $("[data-test-id='date'] input").setValue(planningDate);
         $("[data-test-id='name'] input").setValue("Аркадий Паровозов");
